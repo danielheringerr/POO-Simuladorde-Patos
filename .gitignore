@@ -1,0 +1,39 @@
+## Ignore arquivos de build e temporários
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+
+## Ignore arquivos de usuário
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Ignore pastas e arquivos do Visual Studio
+.vs/
+*.ncb
+*.sdf
+*.cache
+*.dbmdl
+*.pdb
+*.vsp
+*.vspscc
+*.vssscc
+*.tmp
+*.log
+
+## Ignore arquivos de pacotes
+packages/
+*.nupkg
+*.snupkg
+
+## Ignore arquivos de configurações locais
+*.launch.json
+*.settings
+*.DotSettings.user
+
+## Ignore arquivos do Rider ou ReSharper
+.idea/
+*.DotSettings
+_ReSharper*/
