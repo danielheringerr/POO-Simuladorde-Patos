@@ -11,6 +11,14 @@ namespace Simulador_de_Patos
         public override void display()
         {
             Console.WriteLine("Sou um pato-real!");
+            string mallardDuck = @"
+                 __
+             __(o )>
+             \ <_. )
+              `---'
+            Mallard Duck
+            ";
+            Console.WriteLine(mallardDuck);
         }
 
         public void fly()

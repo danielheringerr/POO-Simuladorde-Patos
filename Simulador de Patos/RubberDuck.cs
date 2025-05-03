@@ -11,6 +11,14 @@ namespace Simulador_de_Patos
         public override void display()
         {
             Console.WriteLine("Sou um pato de borracha!");
+            string rubberDuck = @"
+                   __
+                <(o )___
+                 (    )\\
+                 `--'\\
+            Rubber Duck
+            ";
+            Console.WriteLine(rubberDuck);
         }
 
        

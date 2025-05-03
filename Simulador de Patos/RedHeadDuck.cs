@@ -12,6 +12,14 @@ namespace Simulador_de_Patos
         public override void display()
         {
             Console.WriteLine("Sou um pato de cabeça vermelha!");
+            string redheadDuck = @"
+               |====|
+             __(o )> 
+             \ <_. )
+              `---'
+            Redhead Duck
+            ";
+            Console.WriteLine(redheadDuck);
         }
 
         public  void fly()
