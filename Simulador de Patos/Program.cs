@@ -22,7 +22,7 @@
                 if (pato is IQuackable quackable)
                     quackable.quack();
 
-                Console.WriteLine(); // separador visual
+                Console.WriteLine(); 
             }
 
             Console.ReadKey();
