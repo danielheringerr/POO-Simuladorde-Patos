@@ -12,7 +12,7 @@ namespace Simulador_de_Patos
         }
         public virtual void display()
         {
-
+            
         }
     }
 }
