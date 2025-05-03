@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Simulador_de_Patos
 {
-    internal class MallardDuck : Duck, IFlyable
+    internal class MallardDuck : Duck, IFlyable, IQuackable
     {
         public override void display()
         {
@@ -16,6 +16,11 @@ namespace Simulador_de_Patos
         public void fly()
         {
             Console.WriteLine("Voando como um pato-real!");
+        }
+
+        public void quack()
+        {
+            Console.WriteLine("Quack! Quack!");
         }
     }
 }
