@@ -1,3 +1,3 @@
 # POO
-Atividade De Programação Orientada a Objetos.
-Simulador de Patos.
+Atividades De Programação Orientada a Objetos.
+
