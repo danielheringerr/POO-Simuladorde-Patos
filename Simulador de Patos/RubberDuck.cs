@@ -10,13 +10,13 @@ namespace Simulador_de_Patos
     {
         public override void display()
         {
-
+            Console.WriteLine("Sou um pato de borracha!");
         }
 
        
         public void quack()
         {
-        
+            Console.WriteLine("Squeak! (Som de pato de borracha)");
         }
     }
 }

@@ -11,20 +11,17 @@ namespace Simulador_de_Patos
     {
         public override void display()
         {
-            Console.WriteLine("Voar");
+            Console.WriteLine("Sou um pato de cabeça vermelha!");
         }
 
         public  void fly()
         {
-        
+            Console.WriteLine("Voando como um pato de cabeça vermelha!");
         }
 
         public void quack()
         {
-
+            Console.WriteLine("Quack! Quack!");
         }
-
-
-
     }
 }

@@ -10,12 +10,12 @@ namespace Simulador_de_Patos
     {
         public override void display()
         {
-
+            Console.WriteLine("Sou um pato-real!");
         }
 
         public void fly()
         {
-        
+            Console.WriteLine("Voando como um pato-real!");
         }
     }
 }
