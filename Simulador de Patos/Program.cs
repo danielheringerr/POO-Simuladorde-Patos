@@ -15,9 +15,9 @@ namespace Simulador_de_Patos
             };
 
             int indiceAtual = 0;
-            bool executando = true;
+            bool programaExecutando = true;
 
-            while (executando)
+            while (programaExecutando)
             {
                 Console.Clear();
                 Console.WriteLine($"Pato {indiceAtual + 1} de {patos.Count}");
@@ -26,9 +26,9 @@ namespace Simulador_de_Patos
 
                 Console.WriteLine("\n[ N ] Próximo  |  [ V ] Voltar  |  [ S ] Selecionar  |  [ F ] Finalizar");
                 Console.Write("Escolha uma opção: ");
-                string input = Console.ReadLine().ToUpper();
+                string entrada = Console.ReadLine().ToUpper();
 
-                switch (input)
+                switch (entrada)
                 {
                     case "N":
                         indiceAtual = (indiceAtual + 1) % patos.Count;
@@ -55,7 +55,7 @@ namespace Simulador_de_Patos
                         break;
 
                     case "F":
-                        executando = false;
+                        programaExecutando = false;
                         Console.WriteLine("Programa finalizado.");
                         break;
 
