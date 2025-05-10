@@ -63,6 +63,8 @@ namespace Simulador_de_Patos
                         Console.WriteLine("Opção inválida! Pressione qualquer tecla para tentar novamente.");
                         Console.ReadKey();
                         break;
+
+                        Console.WriteLine("LUCAS);
                 }
             }
         }
