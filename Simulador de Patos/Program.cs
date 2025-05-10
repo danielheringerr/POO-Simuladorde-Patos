@@ -64,7 +64,6 @@ namespace Simulador_de_Patos
                         Console.ReadKey();
                         break;
 
-                        Console.WriteLine("LUCAS);
                 }
             }
         }
