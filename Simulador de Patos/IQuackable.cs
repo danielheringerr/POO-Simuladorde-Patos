@@ -8,6 +8,7 @@ namespace Simulador_de_Patos
 {
     public interface IQuackable
     {
+        //vapo
         public void quack();
     }
 }
