@@ -22,6 +22,11 @@ namespace Simulador_de_Patos
             Console.WriteLine(redheadDuck);
         }
 
+        public override void swim()
+        {
+            Console.WriteLine("Nós, patos da cabeça vermelha somos especialistas em nadar!");
+        }
+
         public  void fly()
         {
             Console.WriteLine("Voando como um pato de cabeça vermelha!");

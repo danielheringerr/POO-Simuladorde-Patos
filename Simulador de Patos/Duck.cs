@@ -5,7 +5,7 @@ namespace Simulador_de_Patos
     public class Duck
     {
 
-        public void swim()
+        public virtual void swim()
         {
             Console.WriteLine("Todos os patos nadam, mesmo os de borracha!");
 

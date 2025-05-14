@@ -11,7 +11,8 @@ namespace Simulador_de_Patos
             {
                 new MallardDuck(),
                 new RedHeadDuck(),
-                new RubberDuck()
+                new RubberDuck(),
+                new CyberDuck()
             };
 
             int indiceAtual = 0;
@@ -39,29 +40,61 @@ namespace Simulador_de_Patos
                         break;
 
                     case "S":
-                        Console.Clear();
-                        Console.WriteLine("=== Informações do Pato Selecionado ===\n");
-                        patos[indiceAtual].display();
-                        patos[indiceAtual].swim();
+                        bool submenu = true;
+                        while (submenu)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("=== Ações do Pato Selecionado ===\n");
+                            patos[indiceAtual].display();
 
-                        if (patos[indiceAtual] is IFlyable voador)
-                            voador.fly();
+                            Console.WriteLine("\nEscolha uma ação:");
+                            Console.WriteLine("1 - Nadar");
+                            if (patos[indiceAtual] is IQuackable) Console.WriteLine("2 - Grasnar");
+                            if (patos[indiceAtual] is IFlyable) Console.WriteLine("3 - Voar");
+                            Console.WriteLine("0 - Voltar ao menu principal");
 
-                        if (patos[indiceAtual] is IQuackable quackable)
-                            quackable.quack();
+                            Console.Write("\nOpção: ");
+                            string acao = Console.ReadLine();
 
-                        Console.WriteLine("\nPressione qualquer tecla para voltar ao menu...");
-                        Console.ReadKey();
+                            switch (acao)
+                            {
+                                case "1":
+                                    patos[indiceAtual].swim();
+                                    break;
+                                case "2":
+                                    if (patos[indiceAtual] is IQuackable quackable)
+                                        quackable.quack();
+                                    else
+                                        Console.WriteLine("Esse pato não pode grasnar.");
+                                    break;
+                                case "3":
+                                    if (patos[indiceAtual] is IFlyable voador)
+                                        voador.fly();
+                                    else
+                                        Console.WriteLine("Esse pato não pode voar.");
+                                    break;
+                                case "0":
+                                    submenu = false;
+                                    continue;
+                                default:
+                                    Console.WriteLine("Opção inválida.");
+                                    break;
+                            }
+
+                            Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                            Console.ReadKey();
+                        }
                         break;
+
 
                     case "F":
-                        programaExecutando = false;
-                        Console.WriteLine("Programa finalizado.");
-                        break;
+                            programaExecutando = false;
+                            Console.WriteLine("Programa finalizado.");
+                            break;
 
-                    default:
-                        Console.WriteLine("Opção inválida! Pressione qualquer tecla para tentar novamente.");
-                        Console.ReadKey();
+                        default:
+                            Console.WriteLine("Opção inválida! Pressione qualquer tecla para tentar novamente.");
+                            Console.ReadKey();
                         break;
 
                 }

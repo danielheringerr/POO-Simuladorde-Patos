@@ -21,7 +21,11 @@ namespace Simulador_de_Patos
             Console.WriteLine(rubberDuck);
         }
 
-       
+        public override void swim()
+        {
+            Console.WriteLine("Eu só sei nadar em banheiras e piscinas!");
+        }
+
         public void quack()
         {
             Console.WriteLine("Squeak! (Som de pato de borracha)");

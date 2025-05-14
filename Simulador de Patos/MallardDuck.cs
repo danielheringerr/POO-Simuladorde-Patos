@@ -21,6 +21,10 @@ namespace Simulador_de_Patos
             Console.WriteLine(mallardDuck);
         }
 
+        public override void swim()
+        {
+            Console.WriteLine("Sou o Pato real eu nado muito bem na minha lagoa!");
+        }
         public void fly()
         {
             Console.WriteLine("Voando como um pato-real!");
