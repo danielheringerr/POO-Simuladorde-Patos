@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 namespace Simulador_de_Patos
 {
     internal class RedHeadDuck: Duck, IFlyable, IQuackable
-
     {
+
+        public RedHeadDuck() { }
+
         public override void display()
         {
             Console.WriteLine("Sou um pato de cabeça vermelha!");

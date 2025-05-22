@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections.Generic;
 
 namespace Simulador_de_Patos
@@ -9,10 +9,10 @@ namespace Simulador_de_Patos
         {
             List<Duck> patos = new List<Duck>
             {
-                new MallardDuck(),
-                new RedHeadDuck(),
-                new RubberDuck(),
-                new CyberDuck()
+                new MallardDuck(".\\imgs\\mallardDuck.png",".\\sounds\\MallardDuck.mp3"),
+                new RedHeadDuck(".\\imgs\\redHeadDuck.png",".\\sounds\\MallardDuck.mp3"),
+                new RubberDuck(".\\imgs\\rubberDuck.png", ".\\sounds\\RubberDuck.mp3"),
+                new CyberDuck(".\\imgs\\cyberDuck.png",".\\sounds\\CyberDuck.mp3" )
             };
 
             int indiceAtual = 0;
