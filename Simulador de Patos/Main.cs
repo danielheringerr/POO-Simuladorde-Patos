@@ -141,7 +141,6 @@ namespace SimuladordePatos_UI
         //Utilizado para executar assim que o formulário iniciar
         private void Main_Load(object sender, EventArgs e)
         {
-
             carregarFoto(patos[indiceAtual].fotoPatoPath);
 
         }
