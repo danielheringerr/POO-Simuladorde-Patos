@@ -168,6 +168,19 @@
             PatosControle.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)PatosDisplay).EndInit();
             ResumeLayout(false);
+
+            // NOVAS FUNCIONALIDADES//
+            btnAtivarIA = new Button();
+            btnAtivarIA.Cursor = Cursors.Hand;
+            btnAtivarIA.Image = (Image)resources.GetObject("btnAtivarIA.Image"); // Caso tenha uma imagem
+            btnAtivarIA.Location = new Point(135, 90); // Ajuste de posição conforme seu layout
+            btnAtivarIA.Name = "btnAtivarIA";
+            btnAtivarIA.Size = new Size(60, 60);
+            btnAtivarIA.TabIndex = 3;
+            btnAtivarIA.UseVisualStyleBackColor = true;
+            btnAtivarIA.Visible = false; // Começa oculto
+            btnAtivarIA.Click += btnAtivarIA_Click;
+            PatosControle.Controls.Add(btnAtivarIA);
         }
 
         #endregion
@@ -182,5 +195,6 @@
         private Button Quack;
         private Panel PatosControle;
         private PictureBox PatosDisplay;
+        private Button btnAtivarIA;
     }
 }

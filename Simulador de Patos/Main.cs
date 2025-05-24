@@ -37,11 +37,14 @@ namespace SimuladordePatos_UI
             {
                 PatosDisplay.BackgroundImage = Image.FromFile(caminhoAbsoluto);
                 PatosDisplay.BackgroundImageLayout = ImageLayout.Zoom;
+
             }
             else
             {
                 MessageBox.Show("Erro ao carregar imagem ou painel não instanciado.");
             }
+
+            btnAtivarIA.Visible = (patos[indiceAtual] is CyberDuck);
         }
 
         // Método para trocar a foto do pato (PNG)
@@ -205,6 +208,11 @@ namespace SimuladordePatos_UI
         private void PatosControle_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnAtivarIA_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("IA Ativada! ?? Pronto para processar estratégias de voo e análise de quacks!", "CyberDuck IA");
         }
     }
 }
